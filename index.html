@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     <link rel="stylesheet" href="css/menu_style.css">
     <link rel="stylesheet" href="css/home_page.css">
     <title>Rober&Uwe Museum</title>
@@ -30,52 +31,75 @@
             </li>
             <li><a href="#section_3">About us</a></li>
         </ul>
-        <button><a href="#section_4">Contact us</a></button>
+        <button><a href="#section_4">Get in touch</a></button>
     </nav>
-    <div id="section_1">
-        <h1>ROBER&UWE MUSEUM</h1>
-        <h4>Home is where art is</h4>
-        <button><a href="#section_4">Contact us</a></button>
-        <button><a href="#section_3">About us</a></button>
-        <img src="images/couple.png" width="200"  alt="trial picture">
-    </div>
-    <div id="section_2">
-        <h1>Exhibitions</h1>
-        <p>
-            TimeTables
-            lun
-            mart
-            merc
-            giov
-            ven
-            sab
-            dom
-        </p>
-        <img src="images/lego.png" width="200" height="200" alt="trial picture">
-        <img src="images/nutella.png" width="200" height="200" alt="trial picture">
-        <img src="images/moneta.png" width="200" height="200" alt="trial picture">
-        <img src="images/disney.png" width="200" height="200" alt="trial picture">
 
+    <div id="section_1">
+        <div id="section_1_intestation">
+            <h2 id="section_1_intestation_title">ROBER&UWE<br> MUSEUM</h2>
+            <h4 id="section_1_intestation_subtitle">Home is where art is!</h4>
+            <div id="section_1_intestation_buttons">
+                <button class="section_1_intestation_button"><a href="#section_4">Get in touch</a></button>
+                <button class="section_1_intestation_button"><a href="#section_3">About us</a></button>
+            </div>
+        </div>
+        <div id="section_1_image">
+            <img src="images/couple.png" alt="trial picture">
+        </div>
     </div>
+
+    <div id="section_2">
+        <h3>Our Exhibitions</h3>
+        <div id="section_2_TimeTable">
+            <div class="section_2_TimeTable_Row" id="ciao"><p>TIME TABLE</p> </div>
+            <div class="section_2_TimeTable_Row"><p> Monday </p>  <p>OPEN</p></div>
+            <div class="section_2_TimeTable_Row"><p> Tuesday </p>  <p>OPEN</p></div>
+            <div class="section_2_TimeTable_Row"><p> Tuesday </p>  <p>OPEN</p></div>
+            <div class="section_2_TimeTable_Row"><p> Wednesday </p>  <p>OPEN</p></div>
+            <div class="section_2_TimeTable_Row"><p> Thursday </p>  <p>OPEN</p></div>
+            <div class="section_2_TimeTable_Row"><p> Friday </p>  <p>OPEN</p></div>
+            <div class="section_2_TimeTable_Row"><p> Saturday </p>  <p>OPEN</p></div>
+            <div class="section_2_TimeTable_Row"><p> Sunday </p>  <p>OPEN</p></div>
+        </div>
+        <div id="section_2_pictures">
+            <a href="pages/lego_page.html"><img src="images/lego.png" width="200" height="200" alt="trial picture"></a>
+            <a href="pages/nutella_page.html"><img src="images/nutella.png" width="200" height="200" alt="trial picture"></a>
+            <a href="pages/coins_page.html"><img src="images/coins.png" width="200" height="200" alt="trial picture"></a>
+            <a href="pages/disney_page.html"><img src="images/disney.png" width="200" height="200" alt="trial picture"></a>
+        </div>
+    </div>
+
     <div id="section_3">
         <h1>ABOUT US</h1>
         <img src="images/default.png" width="200"  alt="trial picture">
         <button>CONTACT US</button>
         <button>WHERE WE ARE</button>
     </div>
+
     <div id="section_4">
-        <h1>CONTACT US</h1>
-        <p>
-            Robert Phonenumer
-            Robert Email
-            Uwe Phonenumber
-            Uwe Email
-        </p>
-        <button>Robert Instagram</button>
-        <button>Uwe Instagram</button>
-        <p>
-            Where to find us
-        </p>
+        <div id="section_4_first">
+            <a href="https://www.instagram.com/roblanger1966/" target="_blank"><button class="insta"></button></a>
+            <a href="mailto:roblanger@web.de" target="_blank"><button class="mail"></button></a>
+        </div>
+
+        <div id="section_4_second">
+            <p id="section_4_second_title">CONTACT US</p>
+            <div id="section_4_second_names">
+                <div id="Robert">
+                    <p>Robert Langer</p><p>+49 1515 6752</p>
+                </div>
+                
+                <button id="Bidon"><a href="https://www.google.com/maps" target="_blank">Where to go</a></button>
+                <div id="Uwe">
+                    <p>Uwe Scwhing</p><p>+49 1778409802</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="section_4_third">
+            <a href="https://www.instagram.com/roblanger1966/" target="_blank"><button class="insta"></button></a>
+            <a href="mailto:roblanger@web.de" target="_blank"><button class="mail"></button></a>
+        </div>        
     </div>    
 </body>
 </html>

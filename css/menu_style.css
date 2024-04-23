@@ -28,13 +28,14 @@ nav{
 nav img{
     display: flex;
     position: relative;
-    margin: 2px;
-    right: 4%;
+    
+    right: 6%;
     border-radius: 10px;
+    object-fit:contain;
     border-style: solid;
     border-color: rgb(255, 153, 0);
-    height: 40px;
-    width: 120px;
+    height: 45px;
+    width: 45px;
 }
 
 /*Place the main menù*/
