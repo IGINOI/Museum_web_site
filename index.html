@@ -24,7 +24,7 @@
                     </div>
                     <br>
                     <div id = "menu_button_section">
-                        <button class = "menu_button"><a href="#section_2">Time Tables</a></button>
+                        <button class = "menu_button"><a href="#section_2">Time Table</a></button>
                         <button class = "menu_button"><a href="https://www.google.com/maps" target="_blank">Where to go</a></button>
                     </div>
                 </ul>
@@ -49,9 +49,9 @@
     </div>
 
     <div id="section_2">
-        <h3>Our Exhibitions</h3>
+        <h3 id="section_2_Title">OUR EXHIBITIONS</h3>
         <div id="section_2_TimeTable">
-            <div class="section_2_TimeTable_Row" id="ciao"><p>TIME TABLE</p> </div>
+            <div class="section_2_TimeTable_Row" id="section_2_TimeTable_Row_Title"><p>TIME TABLE</p> </div>
             <div class="section_2_TimeTable_Row"><p> Monday </p>  <p>OPEN</p></div>
             <div class="section_2_TimeTable_Row"><p> Tuesday </p>  <p>OPEN</p></div>
             <div class="section_2_TimeTable_Row"><p> Tuesday </p>  <p>OPEN</p></div>
@@ -61,45 +61,60 @@
             <div class="section_2_TimeTable_Row"><p> Saturday </p>  <p>OPEN</p></div>
             <div class="section_2_TimeTable_Row"><p> Sunday </p>  <p>OPEN</p></div>
         </div>
-        <div id="section_2_pictures">
-            <a href="pages/lego_page.html"><img src="images/lego.png" width="200" height="200" alt="trial picture"></a>
-            <a href="pages/nutella_page.html"><img src="images/nutella.png" width="200" height="200" alt="trial picture"></a>
-            <a href="pages/coins_page.html"><img src="images/coins.png" width="200" height="200" alt="trial picture"></a>
-            <a href="pages/disney_page.html"><img src="images/disney.png" width="200" height="200" alt="trial picture"></a>
+        <div id="section_2_Images">
+            <a class="section_2_Image" href="pages/lego_page.html"><img src="images/lego.png" width="200" height="200" alt="trial picture"></a>
+            <a class="section_2_Image" href="pages/nutella_page.html"><img src="images/nutella.png" width="200" height="200" alt="trial picture"></a>
+            <a class="section_2_Image" href="pages/coins_page.html"><img src="images/coins.png" width="200" height="200" alt="trial picture"></a>
+            <a class="section_2_Image" href="pages/disney_page.html"><img src="images/disney.png" width="200" height="200" alt="trial picture"></a>
         </div>
-    </div>
+        </div>
 
     <div id="section_3">
-        <h1>ABOUT US</h1>
-        <img src="images/default.png" width="200"  alt="trial picture">
-        <button>CONTACT US</button>
-        <button>WHERE WE ARE</button>
+        <h1 id="section_3_title">ABOUT US</h1>
+        <p class="section_3_names">Robert</p>
+        <p class="section_3_names">Uwe</p>
+        <div class="section_3_center_column">
+            <img src="images/couple.png" width="200"  alt="trial picture">
+            <div class="button-bar">
+                <button><a href="#">LEFT</a></button>
+                <button><a href="#">RIGHT</a></button>
+            </div>
+        </div>
+        <img class="section_3_images" src="images/Robert.png" width="200"  alt="trial picture">
+        <img class="section_3_images" src="images/Uwe.png" width="200"  alt="trial picture">
+        <p class="section_3_descriptions">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos sint ab eveniet commodi. Earum, mollitia delectus reiciendis corporis illum amet sunt quisquam adipisci blanditiis velit est incidunt modi. Ab, quasi!</p>           
+        <p class="section_3_descriptions">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos sint ab eveniet commodi. </p>   
     </div>
 
     <div id="section_4">
-        <div id="section_4_first">
-            <a href="https://www.instagram.com/roblanger1966/" target="_blank"><button class="insta"></button></a>
-            <a href="mailto:roblanger@web.de" target="_blank"><button class="mail"></button></a>
-        </div>
-
-        <div id="section_4_second">
-            <p id="section_4_second_title">CONTACT US</p>
-            <div id="section_4_second_names">
-                <div id="Robert">
-                    <p>Robert Langer</p><p>+49 1515 6752</p>
-                </div>
-                
-                <button id="Bidon"><a href="https://www.google.com/maps" target="_blank">Where to go</a></button>
-                <div id="Uwe">
-                    <p>Uwe Scwhing</p><p>+49 1778409802</p>
-                </div>
+        <div class="section_4_part">
+            <div>
+                <a href="https://www.facebook.com/uwe.schwing" target="_blank"><button class="facebook"></button></a>
+                <a href="mailto:us-muc@web.de" target="_blank"><button class="mail"></button></a>
             </div>
         </div>
-
-        <div id="section_4_third">
-            <a href="https://www.instagram.com/roblanger1966/" target="_blank"><button class="insta"></button></a>
-            <a href="mailto:roblanger@web.de" target="_blank"><button class="mail"></button></a>
-        </div>        
+        <div class="section_4_part">
+            <p id="section_4_title">CONTACT US</p>
+        </div>
+        <div class="section_4_part">
+            <div>
+                <a href="https://www.instagram.com/roblanger1966/" target="_blank"><button class="insta"></button></a>
+                <a href="mailto:roblanger@web.de" target="_blank"><button class="mail"></button></a>
+            </div>
+        </div> 
+        <div class="section_4_part">
+            <div>
+                <p>Uwe Scwhing</p><p>+49 1778 409802</p>
+            </div>
+        </div>
+        <div class="section_4_part">
+            <button id="Bidon"><a href="https://www.google.com/maps" target="_blank">Where to go</a></button>
+        </div> 
+        <div class="section_4_part">
+            <div id="Uwe">
+                <p>Robert Langer</p><p>+49 1515 6752</p>
+            </div>
+        </div>              
     </div>    
 </body>
 </html>
