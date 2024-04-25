@@ -1,170 +1,132 @@
-/*To create an horizontal Menù*/
-nav{
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#section_0{
     display: flex;
     position: fixed;
-    z-index: 1;
-    background: rgb(255, 180, 1); 
-    height: 60px; width: 100%; 
-    
-    border-style:solid;
-    border-color: rgb(0, 0, 0);
-    border-radius: 5px;
-    justify-self: center;
+    z-index: 2;
+
+    height: 60px;
+    width: 100%;
+
     justify-content: center;
     align-items: center;
+
+    background: rgb(255, 180, 1);
 }
 
-/*place the logo*/
-nav img{
-    display: flex;
-    position: relative;
-    
-    right: 6%;
-    border-radius: 10px;
-    object-fit:contain;
-    border-style: solid;
-    border-color: rgb(255, 153, 0);
-    height: 45px;
-    width: 45px;
+.section_0_logo{
+
+    height: 100%;
+    width: 25%;
+    text-align: center;
+
+    img{
+        margin-top: 7px;
+        height: 45px;
+        width: 45px;
+    }
 }
 
-/*Place the main menù*/
-nav ul{
+.section_0_menu{
+
     display: flex;
-    border-style: solid;
-    border-color: green;
     height: 100%;
     width: 50%;
-    padding: 0;
-    text-align: center;
-    list-style: none;
-    justify-content: center;
+
+    ul{
+        display: flex;
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        list-style: none;
+
+        li{
+            height: 100%;
+            width: 100%;
+            a{
+                display: block;
+                height: 100%;
+                font-size: 18px;
+            
+                align-content: center;
+                text-decoration: none;
+                color: rgb(0, 0, 0);
+            }
+        }
+        ul{
+            display: none;
+        }
+        li:hover ul{
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+
+            top: 60px;
+            left: 50%;
+            height: 600px;
+
+            transform: translateX(-50%);
+            flex-direction: column;
+            background-color: rgb(41, 41, 41);
+        }  
+        #menu_exhibitions{
+            display: flex;
+            position: absolute;
+            width: 100%;
+            height: 80%;
+            justify-content: center;
+            align-items: center;
+            
+            top: 0%;
+            a{
+                border-radius: 15px;
+                height: 200px;
+                margin: 10px;
+                width: 200px;
+            }
+        }
+        #menu_button_section{
+            display: flex;
+            position: absolute;
+            width: 100%;
+            height: 20%;
+            bottom: 0%;
+
+            justify-content: center;
+            align-items: center;
+            
+            button{
+                height: 40px;
+                width: 120px;
+                margin: 10px;
+                border-radius: 10px;
+                background-color: rgb(255, 153, 0);
+            }
+            
+        }
+    }    
 }
 
-/*Display the Parent section in an horizaontal way on the nav bar*/
-nav ul li{
-    display: inline-block;
-    border-style: solid;
-    border-color: yellow;
+.section_0_button{
     height: 100%;
-    width: 100%;
-}
-
-/*Format the style of the parent section*/
-nav ul li a{
-    display: block;
-    border-style: solid;
-    border-color: red;
-    height: 100%;
-
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-    font-size: 18px;
-    align-content: center;
-}
-
-/*Hide the subsection*/
-nav ul ul{
-    display: none;
-}
-
-/*Show the subsection if the mouse hover on it*/
-nav ul li:hover ul{
-    background-color: rgb(41, 41, 41);
-    display: flex;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 50px;
-    border-style: solid;
-    border-color: aqua;
-    width: 90%;
-    height: 1000%;
-}
-
-/*To display the sub-sections under the parent section BIG MENU*/
-nav ul li li{
-    position: relative;
-    float: none;
-    height: 20%;
-    width: 20%;
-
-    border-style:solid;
-    background: rgb(255, 180, 1);
-    border-color: rgb(82, 30, 93);
-    border-radius: 5px;
-}
-
-/*Place the button*/
-nav button{
-    display: flex;
-    position: relative;
+    width: 25%;
     text-align: center;
-    align-items: center;
-    justify-content: center;
-    margin: 2px;
-    left: 4%;
-    font-size: 18px;
-    border-radius: 10px;
-    background-color: rgb(255, 153, 0);
-    height: 40px;
-    width: 120px;
-}
-nav button a{
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-}
-
-/*Adjust the BIG MENU*/
-#menu_exhibitions{
-    display: flex;
-    position: absolute;
-
-    border-style: solid;
-    border-color:rgb(0, 4, 255);
-
-    top: 0px;
-    width: 100%;
-    height: 80%;
-
-    align-items: center;
-    justify-content: center;
-    justify-items: center;
-}
-
-nav ul li ul div#menu_exhibitions li{
-    border-style: solid;
-    border-color: yellow;
-
-    height: 200px;
-    width: 200px;
-
-    margin: 2%;
-}
-
-#menu_button_section{
-    display: flex;
-    position: absolute;
-
-    border-style: solid;
-    border-color:rgb(8, 0, 255);
-
-    bottom: 0px;
-    width: 100%;
-    height: 20%;
-
-    align-items: center;
-    justify-content: center;
-    justify-items: center;
-}
-
-.menu_button{
-    border-style: solid;
-    border-color: violet;
-
-    margin: 10px;
-    height: 40px;
-    width: 120px;
+    button{
+        margin-top: 10px;
+        height: 40px;
+        width: 120px;
+        border-radius: 10px;
+        background-color: rgb(255, 153, 0);
+        a{
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+            font-size: 18px;
+        }
+    }
 }
 
 #Nutella{
@@ -199,3 +161,8 @@ nav ul li ul div#menu_exhibitions li{
     background-size: 200px 200px;
     background-color: white;
 }
+
+
+
+
+

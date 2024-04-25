@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(255, 153, 0);
+}
+
+.presentation{
+    margin-top: 60px;
+    display: grid;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-columns: auto auto auto auto auto;
+    grid-template-areas:"a b b c c"
+                        "d d e c c"
+                        "d d e f f"
+                        "g h h f f"
+                        "g h h i i";
+    
+
+    .presentation_image:nth-of-type(1){
+        grid-area: a;
+        object-fit: cover;
+        img{
+            padding: 3px;
+            border-radius: 10px;
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+        }
+        
+    }
+    .presentation_image:nth-of-type(2){
+        grid-area: b;
+        object-fit: cover;
+        img{
+            padding: 3px;
+            border-radius: 10px;
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+        }
+    }
+    .presentation_image:nth-of-type(3){
+        grid-area: c;
+        object-fit: cover;
+        img{
+            padding: 3px;
+            border-radius: 10px;
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+        }
+    }
+    .presentation_image:nth-of-type(4){
+        grid-area: d;
+        object-fit: cover;
+        img{
+            padding: 3px;
+            border-radius: 10px;
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+        }
+    }
+    .presentation_image:nth-of-type(5){
+        grid-area: e;
+        object-fit: cover;
+        img{
+            padding: 3px;
+            border-radius: 10px;
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+        }
+    }
+    .presentation_image:nth-of-type(6){
+        grid-area: f;
+        object-fit: cover;
+        img{
+            padding: 3px;
+            border-radius: 10px;
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+        }
+    }
+    .presentation_image:nth-of-type(7){
+        grid-area: g;
+        object-fit: cover;
+        img{
+            padding: 3px;
+            border-radius: 10px;
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+        }
+    }
+    .presentation_image:nth-of-type(8){
+        grid-area: h;
+        object-fit: cover;
+        img{
+            padding: 3px;
+            border-radius: 10px;
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+        }
+    }
+    .presentation_image:nth-of-type(9){
+        grid-area: i;
+        object-fit: cover;
+        img{
+            padding: 3px;
+            border-radius: 10px;
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+        }
+    }
+}
+
+
