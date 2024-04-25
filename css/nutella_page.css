@@ -20,22 +20,27 @@ body{
                         "d d e f f"
                         "g h h f f"
                         "g h h i i";
+    border-style: solid;
+    border-color: violet; 
     
 
     .presentation_image:nth-of-type(1){
         grid-area: a;
         object-fit: cover;
+        border: solid black;
         img{
             padding: 3px;
             border-radius: 10px;
             object-fit: cover;
             height: 100%;
             width: 100%;
+            border: solid blue;
         }
         
     }
     .presentation_image:nth-of-type(2){
         grid-area: b;
+        border: solid black;
         object-fit: cover;
         img{
             padding: 3px;
@@ -43,10 +48,12 @@ body{
             object-fit: cover;
             height: 100%;
             width: 100%;
+            border: solid blue;
         }
     }
     .presentation_image:nth-of-type(3){
         grid-area: c;
+        border: solid black;
         object-fit: cover;
         img{
             padding: 3px;
@@ -54,10 +61,12 @@ body{
             object-fit: cover;
             height: 100%;
             width: 100%;
+            border: solid blue;
         }
     }
     .presentation_image:nth-of-type(4){
         grid-area: d;
+        border: solid black;
         object-fit: cover;
         img{
             padding: 3px;
@@ -65,10 +74,12 @@ body{
             object-fit: cover;
             height: 100%;
             width: 100%;
+            border: solid blue;
         }
     }
     .presentation_image:nth-of-type(5){
         grid-area: e;
+        border: solid black;
         object-fit: cover;
         img{
             padding: 3px;
@@ -76,10 +87,12 @@ body{
             object-fit: cover;
             height: 100%;
             width: 100%;
+            border: solid blue;
         }
     }
     .presentation_image:nth-of-type(6){
         grid-area: f;
+        border: solid black;
         object-fit: cover;
         img{
             padding: 3px;
@@ -87,10 +100,12 @@ body{
             object-fit: cover;
             height: 100%;
             width: 100%;
+            border: solid blue;
         }
     }
     .presentation_image:nth-of-type(7){
         grid-area: g;
+        border: solid black;
         object-fit: cover;
         img{
             padding: 3px;
@@ -98,10 +113,12 @@ body{
             object-fit: cover;
             height: 100%;
             width: 100%;
+            border: solid blue;
         }
     }
     .presentation_image:nth-of-type(8){
         grid-area: h;
+        border: solid black;
         object-fit: cover;
         img{
             padding: 3px;
@@ -109,10 +126,12 @@ body{
             object-fit: cover;
             height: 100%;
             width: 100%;
+            border: solid blue;
         }
     }
     .presentation_image:nth-of-type(9){
         grid-area: i;
+        border: solid black;
         object-fit: cover;
         img{
             padding: 3px;
@@ -120,6 +139,7 @@ body{
             object-fit: cover;
             height: 100%;
             width: 100%;
+            border: solid blue;
         }
     }
 }

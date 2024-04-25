@@ -16,6 +16,8 @@
     align-items: center;
 
     background: rgb(255, 180, 1);
+
+    border: solid red;
 }
 
 .section_0_logo{
@@ -23,6 +25,7 @@
     height: 100%;
     width: 25%;
     text-align: center;
+    border: solid green;
 
     img{
         margin-top: 7px;
@@ -37,6 +40,8 @@
     height: 100%;
     width: 50%;
 
+    border: solid green;
+
     ul{
         display: flex;
         width: 100%;
@@ -44,9 +49,12 @@
         justify-content: center;
         list-style: none;
 
+        border: solid violet;
+
         li{
             height: 100%;
             width: 100%;
+            border: solid yellow;
             a{
                 display: block;
                 height: 100%;
@@ -55,6 +63,8 @@
                 align-content: center;
                 text-decoration: none;
                 color: rgb(0, 0, 0);
+            
+                border: solid red;
             }
         }
         ul{
@@ -72,6 +82,8 @@
             transform: translateX(-50%);
             flex-direction: column;
             background-color: rgb(41, 41, 41);
+
+            border: solid aqua;
         }  
         #menu_exhibitions{
             display: flex;
@@ -82,6 +94,7 @@
             align-items: center;
             
             top: 0%;
+            border: solid royalblue;
             a{
                 border-radius: 15px;
                 height: 200px;
@@ -98,6 +111,8 @@
 
             justify-content: center;
             align-items: center;
+
+            border: solid royalblue;
             
             button{
                 height: 40px;
@@ -114,6 +129,7 @@
 .section_0_button{
     height: 100%;
     width: 25%;
+    border: solid green;
     text-align: center;
     button{
         margin-top: 10px;

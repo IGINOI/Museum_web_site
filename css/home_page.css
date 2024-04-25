@@ -22,6 +22,8 @@ body{
     margin-top: 60px;
     font-size: 40px;
     height: 600px;
+
+    border: solid red;
 }
 
 #section_1_intestation{
@@ -30,6 +32,8 @@ body{
 
     width: 50%;
     height: 80%;
+
+    border: solid blueviolet ;
 }
 
 #section_1_intestation_title{
@@ -45,6 +49,8 @@ body{
     height: 50%;
 
     color: rgb(255, 153, 0);
+
+    border: solid brown;
 }
 
 #section_1_intestation_subtitle{
@@ -58,6 +64,8 @@ body{
     height: 30%;
 
     color: white;
+
+    border: solid brown;
 }
 
 #section_1_intestation_buttons{
@@ -69,6 +77,8 @@ body{
 
     width: 100%;
     height: 20%;
+
+    border: solid brown;
 }
 
 .section_1_intestation_button{
@@ -99,12 +109,16 @@ body{
     width: 50%;
     height: 100%;
 
+    border: solid blueviolet;
+
     img{
         border-radius: 40px;
         object-fit: cover;
 
         width: 80%;
         height: 80%;
+
+        border: solid green;
     }
 }
 
@@ -116,12 +130,15 @@ body{
     flex-direction: column;
     
     font-size: 80px;
+    border: solid red;
 }
 
 #section_2_Title{
 
     text-align: center;
     color: rgb(255, 153, 0);
+
+    border: solid violet;
 }
 
 #section_2_lower{
@@ -132,6 +149,8 @@ body{
     justify-content: center;
 
     gap:40px;
+    
+    border: solid violet;
 }
 
 #section_2_Images{
@@ -145,14 +164,19 @@ body{
     text-align: center;
 
     justify-self: center;
+
+    border: solid violet;
 }
 
 .section_2_Image{
+    
+    border: solid blue;
     img{
         margin: 18px;
         margin-bottom: 0;
         border-radius: 15px;
         background-color: rgb(255, 153, 0);
+        border: solid darkseagreen;
     }
 }
 
@@ -163,6 +187,10 @@ body{
 
     height: 489px;
     width: 480px;
+
+    
+
+    border: solid violet;
 }
 
 #section_2_TimeTable_Row_Title{
@@ -185,6 +213,8 @@ body{
     font-size: 20px;
 
     color: white;
+    
+    border: solid aquamarine;
 }
 
 /*########## THIRD SECTION ##########*/
@@ -197,6 +227,9 @@ body{
                         "b c d"
                         "e c f"
                         "g c h";
+    
+    border-style: solid;
+    border-color: red;
     font-size: 40px;
 }
 
@@ -209,6 +242,7 @@ body{
     grid-area: a;
     text-align: center;
     margin: 0;
+    border: 2.5px solid purple;
     color: white;
 }
 
@@ -220,12 +254,18 @@ body{
     align-items: center;
     justify-content: space-between;
 
+    border: 2.5px solid green;
+
     /*Daniele se mai vedrai sto pezzo sotto aiutami*/
     .slideshow-container{
+        border-style: solid;
+        border-color: aqua;
         height: 100%;
         width: 100%;
         object-fit: cover;
         .mySlides{
+            border-style: solid;
+            border-color: aqua;
             display: none;
             height: 100%;
             width: 100%;
@@ -240,6 +280,8 @@ body{
     
     .slide-button{
         display: flex;
+
+        border: solid aqua;
         width: 100%;
 
         /* Next & previous buttons */
@@ -252,6 +294,8 @@ body{
             font-weight: bold;
             font-size: 18px;
             transition: 0.6s ease;
+
+            border: solid violet;
         }
         .next {
             cursor: pointer;
@@ -262,6 +306,8 @@ body{
             font-weight: bold;
             font-size: 18px;
             transition: 0.6s ease;
+
+            border: solid violet;
         }
         /* On hover, add a black background color with a little bit see-through */
         .prev:hover, .next:hover {
@@ -273,6 +319,8 @@ body{
 .section_3_names {
     text-align: center;
     color: white;
+
+    border: 2.5px solid yellow;
 }
 .section_3_names:nth-of-type(1) {
     grid-area: b;
@@ -298,6 +346,8 @@ body{
     padding: 20px;
     font-size: 18px;
     color: white;
+
+    border: 2.5px solid lightblue;
 }
 
 /*########## FOURTH SECTION ##########*/
@@ -310,6 +360,8 @@ body{
     
     background-color: rgb(20, 20, 20);
     font-size: 40px;
+
+    border: solid red;
 }
 
 #section_4 > * {
@@ -322,6 +374,8 @@ body{
 
     text-align: center;
     align-content: center;
+
+    border: solid violet;
     p{
         font-size: 20px;
         color: white;
@@ -332,9 +386,13 @@ body{
 
     text-align: center;
     align-content: center;
+
+    border: solid violet;
     
     p{
         color: rgb(255, 153, 0);
+
+        border: solid blue;
     }
 }
 .section_4_part:nth-of-type(3){
@@ -342,6 +400,8 @@ body{
 
     text-align: center;
     align-content: center;
+
+    border: solid violet;
     p{
         font-size: 20px;
         color: white;
@@ -349,21 +409,29 @@ body{
 }
 .section_4_part:nth-of-type(4){
     grid-area: d;
+
+    border: solid violet;
     div{
         display: flex;
         justify-content: center;
+
+        border: solid greenyellow; 
         button{
             height: 50px;
             width: 50px;
 
             margin-left: 20px;
             margin-right: 20px;
+
+            border: solid violet;
         }
     }
 }
 .section_4_part:nth-of-type(5){
     grid-area: e;
     text-align: center;
+
+    border: solid violet;
 
     button{
         height: 40px;
@@ -379,16 +447,22 @@ body{
 }
 .section_4_part:nth-of-type(6){
     grid-area: f;
+
+    border: solid violet;
     div{
         display: flex;
         flex-direction: row-reverse;
-        justify-content: center; 
+        justify-content: center;
+
+        border: solid greenyellow; 
         button{
             height: 50px;
             width: 50px;
 
             margin-left: 20px;
             margin-right: 20px;
+
+            border: solid violet;
         }
     }
 }
