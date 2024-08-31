@@ -10,121 +10,195 @@ body{
 
     margin: 0;
     padding: 0;
+    gap: 100px;
 
     background-color: rgb(41, 41, 41);
 }
 
+/* ###################################*/
 /* ########## FIRST SECTION ##########*/
+/* ###################################*/
+
 #section_1{
     display: flex;
-    
     align-items: center;
-    margin-top: 60px;
-    font-size: 40px;
-    height: 600px;
+    min-height: 100svh;
+    padding-top: 60px;
 
     border: solid red;
-}
 
-#section_1_intestation{
-    display: flex;
-    flex-direction: column;
+    #section_1_intestation{
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        margin: auto;
+        height: 100%;
 
-    width: 50%;
-    height: 80%;
-
-    border: solid blueviolet ;
-}
-
-#section_1_intestation_title{
-    display: flex;
-
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-
-    font-size: 70px;
-
-    width: 100%;
-    height: 50%;
-
-    color: rgb(255, 153, 0);
-
-    border: solid brown;
-}
-
-#section_1_intestation_subtitle{
-    display: flex;
-
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+        gap: 4rem;
     
-    width: 100%;
-    height: 30%;
-
-    color: white;
-
-    border: solid brown;
-}
-
-#section_1_intestation_buttons{
-    display: flex;
+        border: solid blueviolet ;
     
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-
-    width: 100%;
-    height: 20%;
-
-    border: solid brown;
-}
-
-.section_1_intestation_button{
-    margin-left: 10%;
-    margin-right: 10%;
+        #section_1_intestation_title{
+            display: flex;
+        
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        
+            font-size: 5rem;
+        
+            width: 100%;
+            height: 70%;
+        
+            color: rgb(255, 153, 0);
+        
+            border: solid brown;
+        }
     
-    height: 40px;
-    width: 120px;
+        #section_1_intestation_subtitle{
+            display: flex;
+        
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            
+            width: 100%;
+            height: 30%;
+            font-size: 4rem;
+        
+            color: white;
+        
+            border: solid brown;
+        }
+    }
 
-    font-size: 18px;
-
-    border-radius: 10px;
-
-    background-color: rgb(255, 153, 0);
+    #section_1_image{
+        display: flex;
     
-    a{
-        text-decoration: none;
-        color: rgb(0, 0, 0);
+        justify-content: center;
+        align-items: center;
+    
+        margin: auto;
+        width: auto;
+        height: 100%;
+    
+        border: solid blueviolet;
+    
+        img{
+            border-radius: 40px;
+            object-fit: cover;
+            
+            width: 80%;
+            height: 80%;
+    
+            border: solid green;
+        }
     }
 }
 
-#section_1_image{
-    display: flex;
+/* &&&&&&&&&& 1180px &&&&&&&&&& */
 
-    justify-content: center;
-    align-items: center;
-
-    width: 50%;
-    height: 100%;
-
-    border: solid blueviolet;
-
-    img{
-        border-radius: 40px;
-        object-fit: cover;
-
-        width: 80%;
-        height: 80%;
-
-        border: solid green;
+@media (max-width: 1180px) {
+    #section_1{
+        #section_1_intestation{
+            #section_1_intestation_title{
+                font-size: 4rem;
+            }
+        
+            #section_1_intestation_subtitle{
+                font-size: 3rem;
+            }
+        }
+    
+        #section_1_image{
+            img{
+                border-radius: 40px;
+            }
+        }
     }
+    
 }
 
+/* &&&&&&&&&& 768px &&&&&&&&&&*/
+
+@media (max-width: 768px) {
+
+    #section_1{
+        display: flex;
+        flex-direction: column;
+        margin-top: 60px;
+        min-height: 100svh;
+        gap: 7rem;
+
+        justify-content: center;
+
+        #section_1_intestation{
+        
+            width: auto;
+            height: auto;
+            border: solid blueviolet ;
+        
+            #section_1_intestation_title{                        
+                font-size: 5rem;
+            
+                width: auto;
+                height: auto;
+            
+                color: rgb(255, 153, 0);
+            
+                border: solid brown;
+            }
+        
+            #section_1_intestation_subtitle{
+                display: flex;
+            
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                
+                width: auto;
+                height: auto;
+                font-size: 2rem;
+            
+                color: white;
+            
+                border: solid brown;
+            }
+        }
+    
+        #section_1_image{
+            display: flex;
+        
+            justify-content: center;
+            align-items: center;
+            width: auto;
+            height: auto;
+        
+            border: solid blueviolet;
+        
+            img{
+                border-radius: 40px;
+                object-fit: cover;
+        
+                width: 80%;
+                max-height: 80%;
+
+                padding: auto;
+                margin: auto;
+        
+                border: solid green;
+            }
+        }
+    }
+    
+}
+
+/* &&&&&&&&&&& 320px/480px &&&&&&&&&& */
 
 
-/*########## SECOND SECTION ##########*/
+/* ###################################*/
+/* ######### SECOND SECTION ##########*/
+/* ###################################*/
 #section_2{
     display: flex;
     flex-direction: column;

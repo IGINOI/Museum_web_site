@@ -80,7 +80,6 @@
             height: 600px;
 
             transform: translateX(-50%);
-            flex-direction: column;
             background-color: rgb(41, 41, 41);
 
             border: solid aqua;
@@ -96,10 +95,13 @@
             top: 0%;
             border: solid royalblue;
             a{
-                border-radius: 15px;
+            
                 height: 200px;
                 margin: 10px;
                 width: 200px;
+                li{
+                    border-radius: 15px;
+                }
             }
         }
         #menu_button_section{
